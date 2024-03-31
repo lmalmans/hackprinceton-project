@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Questions Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Interview Questions Generator</h1>
+</header>
+
+<main>
+    <section class="form-section">
+        <h2>Job Requirement Form</h2>
+        <form id="jobForm" class="form-style">
+            <div class="input-group">
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+            </div>
+            <div class="input-group">
+                <label for="jobDescription">Job Description:</label>
+                <textarea id="jobDescription" name="jobDescription" required></textarea>
+            </div>
+            <div class="submit-container">
+                <button type="submit">Generate Questions</button>
+            </div>
+        </form>
+    </section>
+    
+    <section class="form-section">
+        <h2>Candidate Profile Form</h2>
+        <form id="candidateForm" class="form-style">
+            <div class="input-group">
+                <label for="candidateName">Candidate Name:</label>
+                <input type="text" id="candidateName" name="candidateName" required>
+            </div>
+            <div class="submit-container">
+                <button type="submit">Generate Questions</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="output-section">
+        <h2>Questions:</h2>
+        <div id="questionsOutput" class="questions-output">
+            <!-- Generated questions will be dynamically inserted here -->
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
